@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://katerina-hruba.cz/sitemap.xml
