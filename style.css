@@ -170,16 +170,31 @@ section {
     list-style: none;
 }
 
-.education-list li, .training-list li, .practice-list li {
+.education-list li, .training-list li {
     padding: var(--space-sm) 0;
     border-bottom: 1px solid var(--color-border);
 }
 
 .education-list li:last-child,
-.training-list li:last-child,
-.practice-list li:last-child {
+.training-list li:last-child {
     border-bottom: none;
 }
+
+.practice-list li {
+    padding: var(--space-sm) 0;
+    border-bottom: none;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    gap: 1rem;
+    align-items: baseline;
+}
+
+.practice-list li.divider {
+    border-top: 1px solid var(--color-border);
+    padding-top: var(--space-md);
+    margin-top: var(--space-sm);
+}
+
 
 .year {
     color: var(--color-text-light);
@@ -263,3 +278,4 @@ footer a:hover {
     h1 { font-size: 2rem; }
     h2 { font-size: 1.5rem; }
 }
+
